@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-13T18:22:11 IST" name="Suite" finished-at="2022-08-13T18:22:45 IST" duration-ms="34063">
+    <groups>
+    </groups>
+    <test started-at="2022-08-13T18:22:11 IST" name="Test" finished-at="2022-08-13T18:22:45 IST" duration-ms="34063">
+      <class name="week6.day1.CreateLead">
+        <test-method is-config="true" signature="setup()[pri:0, instance:week6.day1.CreateLead@5e2c3d18]" started-at="2022-08-13T18:22:11 IST" name="setup" finished-at="2022-08-13T18:22:16 IST" duration-ms="4928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createNewLead()[pri:0, instance:week6.day1.CreateLead@5e2c3d18]" started-at="2022-08-13T18:22:16 IST" name="createNewLead" finished-at="2022-08-13T18:22:17 IST" duration-ms="1029" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method week6.day1.CreateLead.createNewLead() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method week6.day1.CreateLead.createNewLead() didn't finish within the time-out 1000
+at java.base@16.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+at java.base@16.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+at java.base@16.0.1/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
+at java.base@16.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+at java.base@16.0.1/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1935)
+at java.base@16.0.1/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$272/0x0000000100309978.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at app//week6.day1.CreateLead.createNewLead(CreateLead.java:19)
+at java.base@16.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@16.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base@16.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@16.0.1/java.lang.reflect.Method.invoke(Method.java:567)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@16.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLead -->
+        <test-method is-config="true" signature="close()[pri:0, instance:week6.day1.CreateLead@5e2c3d18]" started-at="2022-08-13T18:22:17 IST" name="close" finished-at="2022-08-13T18:22:19 IST" duration-ms="1193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:week6.day1.CreateLead@5e2c3d18]" started-at="2022-08-13T18:22:19 IST" name="setup" finished-at="2022-08-13T18:22:21 IST" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createNewLead()[pri:0, instance:week6.day1.CreateLead@5e2c3d18]" started-at="2022-08-13T18:22:21 IST" name="createNewLead" finished-at="2022-08-13T18:22:22 IST" duration-ms="1003" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method week6.day1.CreateLead.createNewLead() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method week6.day1.CreateLead.createNewLead() didn't finish within the time-out 1000
+at java.base@16.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+at java.base@16.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+at java.base@16.0.1/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
+at java.base@16.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+at java.base@16.0.1/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1935)
+at java.base@16.0.1/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$272/0x0000000100309978.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
+at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at app//week6.day1.CreateLead.createNewLead(CreateLead.java:19)
+at java.base@16.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@16.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base@16.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@16.0.1/java.lang.reflect.Method.invoke(Method.java:567)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@16.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewLead -->
+        <test-method is-config="true" signature="close()[pri:0, instance:week6.day1.CreateLead@5e2c3d18]" started-at="2022-08-13T18:22:22 IST" name="close" finished-at="2022-08-13T18:22:23 IST" duration-ms="892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- week6.day1.CreateLead -->
+      <class name="week6.day1.DuplicateLead">
+        <test-method is-config="true" signature="setup()[pri:0, instance:week6.day1.DuplicateLead@248e319b]" started-at="2022-08-13T18:22:23 IST" name="setup" finished-at="2022-08-13T18:22:26 IST" duration-ms="2480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="findDuplicateLead()[pri:0, instance:week6.day1.DuplicateLead@248e319b]" started-at="2022-08-13T18:22:26 IST" name="findDuplicateLead" finished-at="2022-08-13T18:22:45 IST" depends-on-methods="week6.day1.CreateLead.createNewLead" duration-ms="19469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findDuplicateLead -->
+        <test-method is-config="true" signature="close()[pri:0, instance:week6.day1.DuplicateLead@248e319b]" started-at="2022-08-13T18:22:45 IST" name="close" finished-at="2022-08-13T18:22:45 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- week6.day1.DuplicateLead -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

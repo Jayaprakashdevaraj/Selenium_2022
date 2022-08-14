@@ -9,74 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">34,063</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,255</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">week6.day1.CreateLead</td><td><a href="#m0">createNewLead</a></td><td rowspan="2">1660395136891</td><td rowspan="2">1029</td></tr><tr class="failedeven"><td><a href="#m1">createNewLead</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">week6.day1.DuplicateLead</td><td><a href="#m2">findDuplicateLead</a></td><td rowspan="1">1660395146182</td><td rowspan="1">19469</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">week6.day2.CreateLead</td><td><a href="#m0">createNewLead</a></td><td rowspan="2">1660481427763</td><td rowspan="2">9569</td></tr><tr class="passedeven"><td><a href="#m1">createNewLead</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">week6.day1.CreateLead#createNewLead</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method week6.day1.CreateLead.createNewLead() didn&apos;t finish within the time-out 1000
-	at java.base@16.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-	at java.base@16.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-	at java.base@16.0.1/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
-	at java.base@16.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
-	at java.base@16.0.1/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1935)
-	at java.base@16.0.1/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$272/0x0000000100309978.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at app//week6.day1.CreateLead.createNewLead(CreateLead.java:19)
-	at java.base@16.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">week6.day1.CreateLead#createNewLead</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method week6.day1.CreateLead.createNewLead() didn&apos;t finish within the time-out 1000
-	at java.base@16.0.1/jdk.internal.misc.Unsafe.park(Native Method)
-	at java.base@16.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
-	at java.base@16.0.1/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1862)
-	at java.base@16.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
-	at java.base@16.0.1/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1935)
-	at java.base@16.0.1/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at app//org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler$$Lambda$272/0x0000000100309978.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at app//org.openqa.selenium.remote.http.AddSeleniumUserAgent$$Lambda$474/0x0000000100350470.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at app//org.openqa.selenium.remote.http.Filter$$Lambda$273/0x0000000100309ba8.execute(Unknown Source)
-	at app//org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at app//week6.day1.CreateLead.createNewLead(CreateLead.java:19)
-	at java.base@16.0.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base@16.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base@16.0.1/java.lang.Thread.run(Thread.java:831)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">week6.day1.DuplicateLead#findDuplicateLead</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">week6.day2.CreateLead#createNewLead</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Infosys</td><td>Jayaprakash</td><td>Devaraj</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">week6.day2.CreateLead#createNewLead</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Apple</td><td>Jaya</td><td>Prakash</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

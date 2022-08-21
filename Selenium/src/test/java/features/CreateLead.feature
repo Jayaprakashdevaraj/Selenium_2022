@@ -5,6 +5,7 @@ And Type the password as 'crmsfa'
 When Click the login button
 Then Verify the HomePage is displayed
 
+@create
 Scenario Outline: Create lead with different data
 Given Click CRMSFA link
 And click Lead tab

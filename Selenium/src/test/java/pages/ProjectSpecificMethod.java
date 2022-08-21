@@ -1,4 +1,4 @@
-package steps;
+package pages;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
@@ -10,10 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ProjectSpecificMethod extends AbstractTestNGCucumberTests {
 	public static ChromeDriver driver;
-	public int i=1;
-
-	@BeforeMethod
-	public void init() {
+		public void launchBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver =new ChromeDriver();
 		driver.get("http://leaftaps.com/opentaps/");

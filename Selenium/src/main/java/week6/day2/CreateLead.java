@@ -2,13 +2,16 @@ package week6.day2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class CreateLead extends ProjectSpecific {
 	
@@ -26,7 +29,7 @@ public class CreateLead extends ProjectSpecific {
 		return data;
 	}
 	
-	@Test(dataProvider = "smoke")
+	@Test(dataProvider = "smoke", retryAnalyzer = RetryFailedcase.class)
 	public void createNewLead(String company, String fName, String lName) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
@@ -40,12 +43,19 @@ public class CreateLead extends ProjectSpecific {
 		driver.findElement(By.className("smallSubmit")).click();
 		Thread.sleep(2000);
 		String title = driver.getTitle();
-		if(title.equals("View Lead | opentaps CRM")) {
+/*		if(title.equals("View Lead | opentaps CRM")) {
 			System.out.println("Title is verified");
 		}else {
 			System.out.println("Title is not correct");
 		}
-			
+*/		
+		//Hard assert
+	//	Assert.assertEquals(title, "View Lead | opentaps CRM");
+	
+		//SoftAssert
+		SoftAssert assertion = new SoftAssert();
+	assertion.assertEquals(title,"View Lead | opentaps CRM");
+	
 	}
 
 

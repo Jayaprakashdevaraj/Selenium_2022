@@ -4,12 +4,15 @@
   <parameter name="password" value="crmsfa"/>
   <parameter name="url" value="http://leaftaps.com/opentaps/"/>
   <parameter name="username" value="demosalesmanager"/>
+  <listeners>
+    <listener class-name="week6.day2.RetryListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="week6.day2.CreateLead">
         <methods>
           <include name="close"/>
-          <include name="createNewLead"/>
+          <include name="createNewLead" invocation-numbers="0 1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- week6.day2.CreateLead -->

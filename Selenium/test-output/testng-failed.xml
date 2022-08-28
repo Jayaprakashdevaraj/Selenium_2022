@@ -6,7 +6,10 @@
       <class name="week7.testcases.CreateLead">
         <methods>
           <include name="createNewLead" invocation-numbers="0"/>
+          <include name="startReport"/>
+          <include name="stopReport"/>
           <include name="setup"/>
+          <include name="testCaseDetail"/>
           <include name="closeBroweser"/>
           <include name="launchBrowser"/>
         </methods>

@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="crmsfa"/>
-  <parameter name="url" value="http://leaftaps.com/opentaps/"/>
-  <parameter name="username" value="demosalesmanager"/>
-  <listeners>
-    <listener class-name="week6.day2.RetryListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="week6.day2.CreateLead">
+      <class name="week7.testcases.CreateLead">
         <methods>
-          <include name="close"/>
-          <include name="createNewLead" invocation-numbers="0 1"/>
+          <include name="createNewLead" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="closeBroweser"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- week6.day2.CreateLead -->
+      </class> <!-- week7.testcases.CreateLead -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

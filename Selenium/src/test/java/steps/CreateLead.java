@@ -2,20 +2,14 @@ package steps;
 
 import org.openqa.selenium.By;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class CreateLead extends ProjectSpecificMethod{
-	
-	
-	
-	
 
-	
-	
-	
 	@Given("Click CRMSFA link")
 	public void clickCrmSfa() {
 		driver.findElement(By.linkText("CRM/SFA")).click();	
@@ -23,8 +17,6 @@ public class CreateLead extends ProjectSpecificMethod{
 	@And("click Lead tab")
 	public void clickLeadTab() {
 		driver.findElement(By.linkText("Leads")).click();
-
-		
 	}
 
 	@And("Click createlead link")
@@ -34,16 +26,13 @@ public class CreateLead extends ProjectSpecificMethod{
 
 	@When("Type company name as (.*)$")
 	public void typeCompanyName(String companyName) {
-		driver.findElement(By.id("createLeadForm_companyName")).sendKeys(companyName);
-			
+		driver.findElement(By.id("createLeadForm_companyName")).sendKeys(companyName);		
 	}
 
 	
 	@And("Type firstname as (.*)$")
 	public void typeFirstName(String firstName) {
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys(firstName);
-
-		
 	}
 
 	@And("Type lastname as (.*)$")
